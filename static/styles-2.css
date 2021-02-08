@@ -1,0 +1,86 @@
+:root {
+    --color-background-form: #202024;
+    --color-background-screen: #196DDC;
+    --color-background-input: #E0E0E0;
+    --color-button-information: #FE8832;
+    --color-button-simulator: #27AE60;
+    --color-dark-footer: #202024;
+    --color-dark-navbar: #202024;
+    --color-text-logo: #FFCC33;
+    --color-text-input: #BDBDBD;
+    --color-text-navbar: #BDBDBD;
+    --color-text-footer: #BDBDBD;
+    --color-thunder: #FFCC33;
+}
+
+body {
+    width: 1440px;
+    height: 900px;
+    background: linear-gradient(180deg, rgba(25, 109, 220, 0.7) 0%, var(--color-background-screen) 100%);
+}
+
+.image-background-thunder {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.open-circuit {
+    background: linear-gradient(0deg, rgba(32, 32, 36, 0.6) 0%, rgba(32, 32, 36, 0.18) 100%);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    height: 350px;
+    width: 550px;
+    flex-direction: row;
+}
+
+.open-circuit-transformer-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.open-circuit-transformer-data input {
+    width: 120px;
+    background: var(--color-background-input);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+
+
+.shor-circuit {
+    background: linear-gradient(0deg, rgba(32, 32, 36, 0.6) 0%, rgba(32, 32, 36, 0.18) 100%);
+    backdrop-filter: blur(15px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    height: 480px;
+    width: 520px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button-simulator {
+    background: linear-gradient(180deg, #25BE66 0%, #27AE60 100%);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    text-align: center;
+}
+

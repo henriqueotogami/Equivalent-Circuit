@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!-- http://getbootstrap.com/docs/4.5/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="/static/Icons/Kirin-Logo-2.svg" rel="icon" width="auto">
+        <link href="/static/styles-2.css" rel="stylesheet">
+        <title> Tranformer Test</title>
+    </head>
+    <body>
+        <div class="image-background-thunder">
+            <img src="/static/Icons/Background-Thunder.svg">
+        </div>
+        <div class="container">
+            <form action="/" method="">
+            <div class="open-circuit">
+                <div>
+                    <h3>Open circuit</h3>
+                    <hr>
+                    <p>Measured in:</p>
+                    <input class="form-measure-input" name="measure-one" step="any" type="radio" value="first" required>
+                    <label>Primary</label>
+                    <input class="form-measure-input" name="measure-two" step="any" type="radio" value="second" required>
+                    <label>Secondary</label>                    
+                </div>
+                <br>
+                <div class="open-circuit-transformer-data" >
+                    <h6>Vac - Voltage in Alternate Current</h6>
+                    <input autocomplete="off" autofocus placeholder="Volts" size="5" type="number">
+                    <h6>Iac - Alternate Current</h6>
+                    <input autocomplete="off" autofocus placeholder="Ampére" size="5" type="number">
+                    <h6>Pac - Power in Alternate Current</h6>
+                    <input autocomplete="off" autofocus placeholder="Watts" size="5" type="number">
+                    <h6>Vp - Voltage at the Primary Transformer Terminals</h6>
+                    <input autocomplete="off" autofocus placeholder="Volts" size="5" type="number">
+                </div>
+            </div>
+            <div class="shor-circuit">
+                <h3>Shor circuit</h3>
+                <hr>
+                <p>Measured in:</p>
+                <input class="form-measure-input" type="radio" required>
+                <label>Primary</label>
+                <input class="form-measure-input"type="radio"required>
+                <label>Secondary</label>
+                <br>
+                <label>Vcc (V)</label>
+                <input autocomplete="off" autofocus type="number" placeholder="Voltage in Direct Current" size="100">
+                <label>Icc (A)</label>
+                <input autocomplete="off" autofocus type="number" placeholder="Direct Current" size="100">
+                <label>Pcc (W)</label>
+                <input autocomplete="off" autofocus type="number" placeholder="Power in Direct Current" size="100">
+                <label>Vs (V)</label>
+                <input autocomplete="off" autofocus type="number" placeholder="Voltage at the Secondary Transformer Terminals" size="100">
+            </div>
+            </form>
+        </div>
+        <button class="button-simulator" type="submit">Simulator</button>
+    </body>
+    <footer class="footer">
+        <h2>Developed by Natã Rodrigo</h2>
+        <h2>Visit my <a href="https://github.com/natrodrigo" target="_blank">GitHub profile</a></h2>
+        
+    </footer>
+</html>
