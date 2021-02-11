@@ -1,15 +1,3 @@
-.container {
-  max-width: 1360px;
-  margin: 0 auto;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-
-  background: var(--body-background);
-}
-
 :root {
   --header-background: #202024;
   --header-font-color: #bdbdbd;
@@ -25,6 +13,25 @@ body {
     rgba(32, 32, 36, 0.18) 100%
   );
   --button: linear-gradient(180deg, #25BE66 0%, #27AE60 100%);
+
+    --background-form: #202024;
+    --background-screen: #196DDC;
+    --background-input: #E0E0E0;
+    --button-information: #FE8832;
+    --button-simulator: #27AE60;
+    --dark-footer: #202024;
+    --dark-navbar: #202024;
+    --text-logo: #FFCC33;
+    --text-input: #F2F2F2;
+    --text-navbar: #BDBDBD;
+    --text-footer: #BDBDBD;
+    --thunder: #FFCC33;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--body-background);
 }
 
 /* Header */
@@ -42,10 +49,8 @@ header img {
 header ul {
   list-style: none;
   text-transform: capitalize;
-
   display: flex;
   float: right;
-
   margin-top: 40px;
   margin-right: 150px;
 }
@@ -65,12 +70,35 @@ header a {
 }
 /* END | Header */
 
+.container {
+  max-width: 1360px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+/* background */
+
+.Background-Thunder {
+  display: flex;
+  align-items: center;
+}
+
+.Background-Thunder img {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  height: 90%;
+  margin-left: 300px;
+  margin-right: 150px;
+  margin-top: 350px;
+}
+/* END | background */
+
 /* Main Icons */
 main img {
   position: absolute;
   float: left;
   cursor: pointer;
-
   top: 130px;
 }
 
@@ -81,35 +109,34 @@ main img {
 /* END | Main Icons */
 
 /* Form */
-.leftBox {
+.open-circuit {
   width: 520px;
-  height: 490px;
-
+  height: 400px;
   background: var(--form-background);
   backdrop-filter: blur(15px);
   border-radius: 20px;
-  
-  margin-top: 180px;
+  margin-top: 150px;
   margin-left: 150px;
-
   float: left;
 }
 
-.leftBox h1 {
+.open-circuit h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-
   padding-top: 20px;
   padding-left: 25px;
 }
 
 /* Checkbox */
-.checkbox {
+.measured {
   font-family: 'Roboto', sans-serif;
   color: white;
-
   padding-left: 25px;
+}
+
+group {
+  display: flex;
 }
 
 .form {
@@ -117,45 +144,48 @@ main img {
 }
 
 .form label {
+  width: 300px;
   display: block;
   padding-left: 25px;
   padding-bottom: 10px;
-
+  margin-right: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: white;
+  color: var(--text-input);
 }
 
 .form input {
-  width: 450px;
+  width: 130px;
   height: 30px;
   margin-left: 25px;
+  margin-right: 0;
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
   padding-left: 20px;
   outline-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--background-input);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
-.rightBox {
+.shor-circuit {
   width: 520px;
-  height: 490px;
-
+  height: 400px;
   background: var(--form-background);
   backdrop-filter: blur(15px);
   border-radius: 20px;
-  
-  margin-top: 180px;
+  margin-top: 150px;
   margin-right: 150px;
-
   float: right;
 }
 
-.rightBox h1 {
+.shor-circuit h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-
   padding-top: 20px;
   padding-left: 25px;
 }
@@ -163,37 +193,34 @@ main img {
 /* Button Simulator */
 .btn button {
   width: 313px;
-  height: 70px;
-
+  height: 60px;
   font-family: 'Roboto', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   color: white;
   background: var(--button);
-  
   cursor: pointer;
   border: none;
   border-radius: 8px;
-
-  margin-top: 90px;
+  margin-top: 30px;
   margin-left: 520px;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 /* END | Form */
 
 /* Footer */
 footer {
   width: 100%;
-  height: 80px;  
+  height: 65px;  
   background: var(--header-background);
 }
 
 footer h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
-
-  padding-top: 20px;
+  color: var(--text-footer);
+  padding-top: 10px;
   text-align: center;
 }
 /* END | Footer */
